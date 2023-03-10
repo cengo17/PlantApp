@@ -129,8 +129,7 @@ export default function HomePage() {
                   style={{
                     flex: 1,
                   }}>
-                  <View
-                    style={styles.titleView}>
+                  <View style={styles.titleView}>
                     <CText
                       regular
                       fontSize={16}
@@ -153,8 +152,7 @@ export default function HomePage() {
           horizontal={false}
           renderItem={({item, index}) => {
             return (
-              <View
-                style={styles.titleViews}>
+              <View style={styles.titleViews}>
                 <CText
                   style={{padding: 12, fontWeight: 500, width: '70%'}}
                   regular
@@ -162,10 +160,7 @@ export default function HomePage() {
                   color={'#13231B'}>
                   {item.title}
                 </CText>
-                <Image
-                  style={styles.img}
-                  source={{uri: item?.image?.url}}
-                />
+                <Image style={styles.img} source={{uri: item?.image?.url}} />
               </View>
             );
           }}
@@ -223,5 +218,5 @@ const styles = StyleSheet.create({
     width: 150,
     marginLeft: 'auto',
     borderRadius: 7,
-  }
+  },
 });
