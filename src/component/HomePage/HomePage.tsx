@@ -130,13 +130,7 @@ export default function HomePage() {
                     flex: 1,
                   }}>
                   <View
-                    style={{
-                      marginTop: 'auto',
-                      marginBottom: 15,
-                      padding: 15,
-                      backgroundColor: 'transparent',
-                      borderRadius: 12,
-                    }}>
+                    style={styles.titleView}>
                     <CText
                       regular
                       fontSize={16}
@@ -160,14 +154,7 @@ export default function HomePage() {
           renderItem={({item, index}) => {
             return (
               <View
-                style={{
-                  width: 160,
-                  height: 160,
-                  backgroundColor: '#F9FFFA',
-                  flexDirection: 'row',
-                  borderRadius: 7,
-                  marginLeft: 5,
-                }}>
+                style={styles.titleViews}>
                 <CText
                   style={{padding: 12, fontWeight: 500, width: '70%'}}
                   regular
@@ -176,12 +163,7 @@ export default function HomePage() {
                   {item.title}
                 </CText>
                 <Image
-                  style={{
-                    height: 150,
-                    width: 150,
-                    marginLeft: 'auto',
-                    borderRadius: 7,
-                  }}
+                  style={styles.img}
                   source={{uri: item?.image?.url}}
                 />
               </View>
@@ -221,4 +203,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  titleView: {
+    marginTop: 'auto',
+    marginBottom: 15,
+    padding: 15,
+    backgroundColor: 'transparent',
+    borderRadius: 12,
+  },
+  titleViews: {
+    width: 160,
+    height: 160,
+    backgroundColor: '#F9FFFA',
+    flexDirection: 'row',
+    borderRadius: 7,
+    marginLeft: 5,
+  },
+  img: {
+    height: 150,
+    width: 150,
+    marginLeft: 'auto',
+    borderRadius: 7,
+  }
 });
