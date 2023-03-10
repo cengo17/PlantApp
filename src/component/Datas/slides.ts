@@ -6,7 +6,6 @@ export const slides = [
     title: 'Take a photo to',
     title1: 'identify',
     title2: 'the plant!',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     id: '2',
